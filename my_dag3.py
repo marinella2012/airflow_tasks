@@ -97,6 +97,7 @@ def load_data(**kwargs):
     res_df.to_sql('world_weather_1', con=engine, schema='public', if_exists='append') # взяла свободное имя таблицы для отладки
     print(res_df)
 
+
 # В контексте DAG'а зададим набор task'ок
 # Объект-инстанс Operator'а - это и есть task
 with DAG(
